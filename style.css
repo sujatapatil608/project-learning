@@ -1,5 +1,8 @@
 body{
     font-family: sans-serif;
+    font-style: bold;
+    word-spacing: 5px;
+    background-color: black;
 }
 .foot{
     width: 100%;
@@ -8,3 +11,172 @@ body{
     background-image: url(image/slide2.webp);
     background-size: cover;
 }
+a{
+    font-size: 20px;
+    list-style: none;
+    color: brown;
+    
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #3498db;
+    bottom: -5px;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateX(-50%);
+}
+
+/* .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #3498db;
+    bottom: 0;
+    left: 0;
+} */
+ul{
+    font-size: 20px;
+    list-style: none;
+    color: brown;
+}
+.bi{
+    font-size: 20px;
+    color: black;
+}
+h4{
+    color: brown;
+}
+.bi-youtube{
+    font-size:30px ;
+    color: red;
+}
+.bi-whatsapp{
+    font-size: 30px;
+    color: green;
+}
+.bi-facebook{
+    font-size: 30px;
+    color: cornflowerblue;
+}
+.bi-linkedin{
+    font-size: 30px;
+    color:blue ;
+}
+.bi-instagram{
+    font-size: 30px;
+    color: crimson;
+}
+.btn:hover{
+    color: rgb(233, 113, 43);
+    background-color: rgb(233, 113, 43);
+}
+.btn{
+    text-align: center;
+}
+a:hover {
+  color: brown;
+  background-color: inherit !important;
+}
+/* ====== Hover Image Shadow & Zoom ====== */
+img {
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ====== Card / Container Shadow on Hover ====== */
+.row {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+
+}
+
+.row:hover {
+  background-color: #fff8e7;
+    transform: translatey(-8px);
+
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== Buttons Hover ====== */
+button.btn-outline-warning {
+  transition: 0.3s;
+} 
+button.btn-outline-warning:hover {
+  background-color: #ffc107;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ====== Media Queries for Responsiveness ====== */
+@media (max-width: 992px) {
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .col-md-6, .col-md-5 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .list-group-item {
+    font-size: 14px;
+  }
+  button {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/* Mobile responsive fix */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .card img {
+    width: 100% !important;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+  }
+}
+
+
