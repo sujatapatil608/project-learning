@@ -2,451 +2,653 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Delights - Delicious Food & Cozy Atmosphere</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <!-- custome css  -->
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="image/logo1.jpg" alt="Bootstrap" width="100" height="100">
-      </a>
-
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" style="color: brown; font-family: 'Cherry Swash'; font-size: 25px;"
-            aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color: brown; font-family: 'Cherry Swash'; font-size: 25px;"
-            href="about.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color: brown; font-family: 'Cherry Swash'; font-size: 25px;"
-            href="menu.html">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " style="color: brown; font-family: 'Cherry Swash'; font-size: 25px;"
-            href="services.html">Our
-            Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color: brown; font-family: 'Cherry Swash'; font-size: 25px;"
-            href="gallary.html">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color: brown;  font-family: 'Cherry Swash'; font-size: 25px;"
-            href="location.html">Location</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color: brown;  font-family: 'Cherry Swash'; font-size:25px"
-            href="contact.html">Contact</a>
-        </li>
-
-      </ul>
-    </div>
-  </nav>
-  <!--navbar end-->
-  <!--slide strat-->
-  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="image/slide22222.jpg" class="d-block w-100 h-25" alt="...">
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="image/slide66.jpg" class="d-block w-100 " alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="image/slide888.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <!-- <main>
-      <div class="container my-4">
-        <div class="row g-4">
-
-          
-          <div class="col-md-12">
-            <div class="card shadow d-flex flex-row h-100">
-              <img src="image/chees pizza.jpg" class="img-fluid rounded-start" style="width: 250px; object-fit: cover;"
-                alt="Cheese Pizza">
-              <div class="card-body">
-                <h4 class="card-title">Cheese Pizza</h4>
-                <p class="card-text">Hot and cheesy pizza with fresh toppings straight from the oven.</p>
-                <p class="fw-bold"><i class="bi bi-currency-rupee"></i> 300</p>
-                <button type="button" class="btn btn-outline-warning">Order</button>
-              </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">The classic crown</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" onclick="showPage('home-page')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('menu-page')">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('about-page')">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('gallery-page')">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('contact-page')">Contact</a>
+                    </li>
+                </ul>
             </div>
-          </div>     
-          <div class="col-md-12">
-            <div class="card shadow d-flex flex-row h-100">
-              <h4 class="card-title">Tomato Soup</h4>
-                <p class="card-text">A warm and comforting soup made with fresh ripe tomatoes, herbs, and cream.</p>
-                <p class="fw-bold"><i class="bi bi-currency-rupee"></i> 200</p>
-                <button type="button" class="btn btn-outline-warning">Order</button>
-              <div class="card-body">
-                 <img src="image/tomato sop.jpg" class="img-fluid rounded-start" style="width: 250px; object-fit: cover;"
-                alt="Tomato Soup">
-              </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home-page" class="page-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="display-4">Welcome to Cafe Delights</h1>
+                <p class="lead">Serving the finest pizza, burgers, and more in a cozy atmosphere</p>
+                <a href="#" class="btn btn-primary btn-lg" onclick="showPage('menu-page')">View Our Menu</a>
             </div>
-          </div>
+        </section>
 
-          
-          <div class="col-md-12">
-            <div class="card shadow d-flex flex-row h-100">
-              <img src="image/biryani.jpg" class="img-fluid rounded-start" style="width: 250px; object-fit: cover;"
-                alt="Chicken Biryani">
-              <div class="card-body">
-                <h4 class="card-title">Chicken Biryani</h4>
-                <p class="card-text">Fragrant basmati rice cooked with tender chicken, rich spices, and saffron.</p>
-                <p class="fw-bold"><i class="bi bi-currency-rupee"></i> 500</p>
-                <button type="button" class="btn btn-outline-warning">Order</button>
-              </div>
+        <!-- Featured Items -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title">Our Specialties</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card menu-card">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                class="card-img-top" alt="Pizza">
+                            <div class="card-body">
+                                <h5 class="card-title">Gourmet Pizza</h5>
+                                <p class="card-text">Handmade dough with fresh ingredients and premium cheese.</p>
+                                <span class="price">From $12.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card menu-card">
+                            <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                class="card-img-top" alt="Burger">
+                            <div class="card-body">
+                                <h5 class="card-title">Signature Burgers</h5>
+                                <p class="card-text">Juicy beef patties with fresh veggies and secret sauce.</p>
+                                <span class="price">From $10.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card menu-card">
+                            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                class="card-img-top" alt="Coffee">
+                            <div class="card-body">
+                                <h5 class="card-title">Artisan Coffee</h5>
+                                <p class="card-text">Freshly brewed coffee from ethically sourced beans.</p>
+                                <span class="price">From $4.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
 
-          
-          <div class="col-md-12">
-            <div class="card shadow d-flex flex-row h-100">
-              <img src="image/bager.png" class="img-fluid rounded-start" style="width: 250px; object-fit: cover;"
-                alt="Chicken Burger">
-              <div class="card-body">
-                <h4 class="card-title">Chicken Burger</h4>
-                <p class="card-text">Juicy grilled chicken burger with fresh lettuce and sauces.</p>
-                <p class="fw-bold"><i class="bi bi-currency-rupee"></i> 550</p>
-                <button type="button" class="btn btn-outline-warning">Order</button>
-              </div>
+        <!-- About Preview -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="section-title">Our Story</h2>
+                        <p>Founded in 2010, Cafe Delights started as a small family-owned cafe with a passion for
+                            serving delicious food made from locally sourced ingredients. Over the years, we've grown
+                            into a beloved neighborhood spot known for our cozy atmosphere and friendly service.</p>
+                        <p>Our chefs bring creativity and expertise to every dish, ensuring that each meal is a
+                            delightful experience for our customers.</p>
+                        <a href="#" class="btn btn-primary" onclick="showPage('about-page')">Learn More</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Cafe Interior" class="img-fluid about-img">
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
 
-          
-          <div class="col-md-12">
-            <div class="card shadow d-flex flex-row h-100">
-              <img src="image/pasta.png" class="img-fluid rounded-start" style="width: 250px; object-fit: cover;" alt="Italian">
-
-  </main>  -->
-  <main>
-    <div class="container w-100 mt-2">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="image/chees pizza.jpg" class="img" alt="" width="400px" height="350px mt-2 border border-secondary shadow-sm border-radius-2">
-        </div>
-        <div class="col-md-5">
-          <h1>
-            Cheese Pizza
-          </h1>
-          <p>Hot and cheesy pizza with fresh toppings straight from the oven.</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><i class="bi bi-currency-rupee"></i>300</li>
-          </ul>
-          <div class="card-body">
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
-        </div>
-      </div>
+        <!-- Testimonials -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title">What Our Customers Say</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"The best pizza I've ever had! The crust is perfectly crispy and
+                                the toppings are always fresh."</p>
+                            <p class="testimonial-author">- Sarah Johnson</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"I come here for coffee every morning. The atmosphere is perfect
+                                for getting some work done or catching up with friends."</p>
+                            <p class="testimonial-author">- Michael Chen</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Their burgers are incredible! I love that they use local
+                                ingredients and you can really taste the difference."</p>
+                            <p class="testimonial-author">- Emily Rodriguez</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+
+    <!-- Menu Page -->
+    <div id="menu-page" class="page-content">
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title">Our Menu</h2>
+
+                <ul class="nav nav-pills justify-content-center mb-5" id="menuTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pizza-tab" data-bs-toggle="pill" data-bs-target="#pizza"
+                            type="button" role="tab">Pizza</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="burgers-tab" data-bs-toggle="pill" data-bs-target="#burgers"
+                            type="button" role="tab">Burgers</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="drinks-tab" data-bs-toggle="pill" data-bs-target="#drinks"
+                            type="button" role="tab">Drinks</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="desserts-tab" data-bs-toggle="pill" data-bs-target="#desserts"
+                            type="button" role="tab">Desserts</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="menuTabsContent">
+                    <div class="tab-pane fade show active" id="pizza" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Margherita Pizza" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>Margherita Pizza <span class="price">$12.99</span></h5>
+                                        <p>Classic combination of tomato sauce, fresh mozzarella, and basil</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Pepperoni Pizza" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>Pepperoni Pizza <span class="price">$14.99</span></h5>
+                                        <p>Tomato sauce, mozzarella, and generous portions of pepperoni</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Vegetarian Pizza" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>Vegetarian Delight <span class="price">$13.99</span></h5>
+                                        <p>Tomato sauce, mozzarella, mushrooms, onions, bell peppers, and olives</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1593259037198-c720f442b5cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="BBQ Chicken Pizza" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>BBQ Chicken Pizza <span class="price">$15.99</span></h5>
+                                        <p>BBQ sauce, mozzarella, grilled chicken, red onions, and cilantro</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="burgers" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Classic Burger" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>Classic Cheeseburger <span class="price">$10.99</span></h5>
+                                        <p>Beef patty, cheddar cheese, lettuce, tomato, onion, and special sauce</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Bacon Burger" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>Bacon Deluxe <span class="price">$12.99</span></h5>
+                                        <p>Beef patty, crispy bacon, Swiss cheese, lettuce, and barbecue sauce</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Veggie Burger" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>Veggie Burger <span class="price">$11.99</span></h5>
+                                        <p>Plant-based patty, avocado, sprouts, tomato, and garlic aioli</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Mushroom Swiss Burger" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>Mushroom Swiss Burger <span class="price">$13.99</span></h5>
+                                        <p>Beef patty, sautéed mushrooms, Swiss cheese, and truffle aioli</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="drinks" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Coffee" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>Specialty Coffee <span class="price">$4.99</span></h5>
+                                        <p>Freshly brewed coffee from locally roasted beans</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Cappuccino" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>Cappuccino <span class="price">$5.99</span></h5>
+                                        <p>Espresso with steamed milk and a deep layer of foam</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Fresh Juice" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>Fresh Juice <span class="price">$6.99</span></h5>
+                                        <p>Seasonal fruits cold-pressed to order</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Smoothie" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>Superfood Smoothie <span class="price">$7.99</span></h5>
+                                        <p>Blend of fruits, spinach, and protein powder</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="desserts" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Chocolate Cake" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>Chocolate Cake <span class="price">$6.99</span></h5>
+                                        <p>Rich chocolate layers with buttercream frosting</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Cheesecake" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>New York Cheesecake <span class="price">$7.99</span></h5>
+                                        <p>Creamy cheesecake with a graham cracker crust</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Ice Cream" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>Artisan Ice Cream <span class="price">$5.99</span></h5>
+                                        <p>Handcrafted ice cream with seasonal flavors</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Tiramisu" class="img-fluid rounded" width="100">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>Tiramisu <span class="price">$8.99</span></h5>
+                                        <p>Classic Italian dessert with espresso-soaked ladyfingers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="container w-100 mt-2">
-      <div class="row">
-        <div class="col-md-6">
-          <h1>
-            Tomato Soup
-          </h1>
-          <p>A warm and comforting soup made with fresh ripe tomatoes, herbs, and a hint of cream.</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><i class="bi bi-currency-rupee"></i>200</li>
-          </ul>
-          <div class="card-body">
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <img src="image/tomato sop.jpg" alt="" width="400px" height="300px border border-black shadow-sm border-radius-2">
 
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <img src="image/biryani.jpg" alt="" width="400px" height="350px border border-black shadow-sm  border-radius-2">
-        </div>
-        <div class="col-md-5">
-          <h1>
-            Chicken Biryani
-          </h1>
-          <p>Fragrant basmati rice cooked with tender chicken, rich spices, and saffron for an authentic taste.</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><i class="bi bi-currency-rupee"></i>500</li>
-          </ul>
-          <div class="card-body">
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <h1>
-            Chicken Burger
-          </h1>
-          <p>Juicy grilled chicken burger with fresh lettuce and sauces</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><i class="bi bi-currency-rupee"></i>550</li>
-          </ul>
-          <div class="card-body">
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <img src="image/barger1.jpg" alt="" width="500px" height="300px border border-black  border-radius-2 shadow-sm ">
+    <!-- About Page -->
+    <div id="about-page" class="page-content">
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title">About Us</h2>
 
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <img src="image/pasta1.jpg" alt="" width="500px" height="300px border border-black  border-radius-2 shadow-sm ">
-        </div>
-        <div class="col-md-5 p-4">
-          <h1>
-            Italian Pasta
-          </h1>
-          <p>Delicious creamy pasta served with herbs and parmesan cheese.</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><i class="bi bi-currency-rupee"></i>400</li>
-          </ul>
-          <div class="card-body">
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5 p-4">
-          <h1>Paneer Tikka</h1>
-          <p>Its smoky, flavorful, and a favorite for both vegetarians and food lovers.</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><i class="bi bi-currency-rupee"></i>300</li>
-          </ul>
-          <div class="card-body">
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
-        </div>
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h3>Our Story</h3>
+                        <p>Cafe Delights was founded in 2010 by husband and wife team, Marco and Sofia. What started as
+                            a small neighborhood cafe with just six tables has grown into a beloved local institution
+                            known for its delicious food and warm atmosphere.</p>
+                        <p>Our philosophy is simple: use the freshest ingredients, prepare everything with care, and
+                            serve our customers like family. We source locally whenever possible, supporting our
+                            community's farmers and producers.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Cafe Interior" class="img-fluid about-img">
+                    </div>
+                </div>
 
-        <div class="col-md-6">
-          <img src="image/Paneer-Tikka-Naan-.jpg" alt="" width="500px"
-            height="300px border border-black border-radius-2 shadow-sm ">
-        </div>
-      </div>
+                <div class="row mb-5">
+                    <div class="col-md-6 order-md-2">
+                        <h3>Our Chefs</h3>
+                        <p>Our culinary team is led by Executive Chef Maria Rodriguez, who brings over 15 years of
+                            experience in Italian and American cuisine. She's passionate about creating dishes that are
+                            both familiar and exciting.</p>
+                        <p>Each member of our kitchen staff is trained in our exacting standards for quality and
+                            consistency. We believe that great food comes from attention to detail and a genuine love
+                            for cooking.</p>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Our Chef" class="img-fluid about-img">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Community Involvement</h3>
+                        <p>We believe in giving back to the community that has supported us over the years. We regularly
+                            participate in local events and donate to neighborhood schools and organizations.</p>
+                        <p>Each month, we feature a "Community Plate" special where a portion of the proceeds goes to a
+                            local charity. We also host fundraising events and provide meals for those in need during
+                            the holidays.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b3029?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Community Event" class="img-fluid about-img">
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-  </main>
-  <br>
-  <!-- <main>
-  <div class="container my-4">
-    <div class="row g-4">
 
-       Cheese Pizza 
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow h-100">
-          <img src="image/chees pizza.jpg" class="card-img-top" alt="Cheese Pizza">
-          <div class="card-body text-center">
-            <h4 class="card-title">Cheese Pizza</h4>
-            <p class="card-text">Hot and cheesy pizza with fresh toppings straight from the oven.</p>
-            <p class="fw-bold"><i class="bi bi-currency-rupee"></i> 300</p>
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
-        </div>
-      </div>
+    <!-- Gallery Page -->
+    <div id="gallery-page" class="page-content">
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title">Gallery</h2>
 
-       Tomato Soup 
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow h-100">
-          <img src="image/tomato sop.jpg" class="card-img-top" alt="Tomato Soup">
-          <div class="card-body text-center">
-            <h4 class="card-title">Tomato Soup</h4>
-            <p class="card-text">A warm and comforting soup made with fresh ripe tomatoes, herbs, and cream.</p>
-            <p class="fw-bold"><i class="bi bi-currency-rupee"></i> 200</p>
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
-        </div>
-      </div>
-
-       Chicken Biryani 
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow h-100">
-          <img src="image/biryani.jpg" class="card-img-top" alt="Chicken Biryani">
-          <div class="card-body text-center">
-            <h4 class="card-title">Chicken Biryani</h4>
-            <p class="card-text">Fragrant basmati rice cooked with tender chicken, rich spices, and saffron.</p>
-            <p class="fw-bold"><i class="bi bi-currency-rupee"></i> 500</p>
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
-        </div>
-      </div>
-
-      Chicken Burg
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow h-100">
-          <img src="image/bager.png" class="card-img-top" alt="Chicken Burger">
-          <div class="card-body text-center">
-            <h4 class="card-title">Chicken Burger</h4>
-            <p class="card-text">Juicy grilled chicken burger with fresh lettuce and sauces.</p>
-            <p class="fw-bold"><i class="bi bi-currency-rupee"></i> 550</p>
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
-        </div>
-      </div>
-
-  
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow h-100">
-          <img src="image/pasta.png" class="card-img-top" alt="Italian Pasta">
-          <div class="card-body text-center">
-            <h4 class="card-title">Italian Pasta</h4>
-            <p class="card-text">Delicious creamy pasta served with herbs and parmesan cheese.</p>
-            <p class="fw-bold"><i class="bi bi-currency-rupee"></i> 400</p>
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
-        </div>
-      </div>
-
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Pizza" class="img-fluid gallery-img rounded">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Burger" class="img-fluid gallery-img rounded">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Coffee" class="img-fluid gallery-img rounded">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Pizza Slice" class="img-fluid gallery-img rounded">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Burger Closeup" class="img-fluid gallery-img rounded">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Coffee Art" class="img-fluid gallery-img rounded">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Cheesecake" class="img-fluid gallery-img rounded">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Cafe Interior" class="img-fluid gallery-img rounded">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Cafe Exterior" class="img-fluid gallery-img rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-  </div>
-</main>-->
-  <!--<main>
-  <div class="container my-4">
-    <div class="row g-4">
 
-      
-      <div class="col-md-12">
-        <div class="card shadow d-flex flex-row h-100">
-          <img src="image/chees pizza.jpg" class="img-fluid rounded-start" style="width: 250px; object-fit: cover;" alt="Cheese Pizza">
-          <div class="card-body">
-            <h4 class="card-title">Cheese Pizza</h4>
-            <p class="card-text">Hot and cheesy pizza with fresh toppings straight from the oven.</p>
-            <p class="fw-bold"><i class="bi bi-currency-rupee"></i> 300</p>
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
+    <!-- Contact Page -->
+    <div id="contact-page" class="page-content">
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title">Contact Us</h2>
+
+                <div class="row mb-5">
+                    <div class="col-md-4">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h4>Address</h4>
+                            <p>123 Main Street<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Opening Hours</h4>
+                            <p>Monday-Friday: 8am - 10pm<br>Saturday-Sunday: 9am - 11pm</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h4>Contact Info</h4>
+                            <p>Phone: (555) 123-4567<br>Email: info@cafedelights.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <div class="card p-4">
+                            <h3 class="text-center mb-4">Send Us a Message</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid px-0">
+            <div class="map"
+                style="height: 400px; background: #eee; display: flex; align-items: center; justify-content: center;">
+                <p class="text-center">Map would be embedded here<br>showing the location of Cafe Delights</p>
+            </div>
         </div>
-      </div>
-
-      
-      <div class="col-md-12">
-        <div class="card shadow d-flex flex-row h-100">
-          <img src="image/tomato sop.jpg" class="img-fluid rounded-start" style="width: 250px; object-fit: cover;" alt="Tomato Soup">
-          <div class="card-body">
-            <h4 class="card-title">Tomato Soup</h4>
-            <p class="card-text">A warm and comforting soup made with fresh ripe tomatoes, herbs, and cream.</p>
-            <p class="fw-bold"><i class="bi bi-currency-rupee"></i> 200</p>
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
-        </div>
-      </div>
-
-    
-      <div class="col-md-12">
-        <div class="card shadow d-flex flex-row h-100">
-          <img src="image/biryani.jpg" class="img-fluid rounded-start" style="width: 250px; object-fit: cover;" alt="Chicken Biryani">
-          <div class="card-body">
-            <h4 class="card-title">Chicken Biryani</h4>
-            <p class="card-text">Fragrant basmati rice cooked with tender chicken, rich spices, and saffron.</p>
-            <p class="fw-bold"><i class="bi bi-currency-rupee"></i> 500</p>
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="col-md-12">
-        <div class="card shadow d-flex flex-row h-100">
-          <img src="image/bager.png" class="img-fluid rounded-start" style="width: 250px; object-fit: cover;" alt="Chicken Burger">
-          <div class="card-body">
-            <h4 class="card-title">Chicken Burger</h4>
-            <p class="card-text">Juicy grilled chicken burger with fresh lettuce and sauces.</p>
-            <p class="fw-bold"><i class="bi bi-currency-rupee"></i> 550</p>
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="col-md-12">
-        <div class="card shadow d-flex flex-row h-100">
-          <img src="image/pasta.png" class="img-fluid rounded-start" style="width: 250px; object-fit: cover;" alt="Italian Pasta">
-          <div class="card-body">
-            <h4 class="card-title">Italian Pasta</h4>
-            <p class="card-text">Delicious creamy pasta served with herbs and parmesan cheese.</p>
-            <p class="fw-bold"><i class="bi bi-currency-rupee"></i> 400</p>
-            <button type="button" class="btn btn-outline-warning">Order</button>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</main> -->
-<!--<section class="py-5 text-center bg-light">
-  <div class="container">
-    <div class="p-5 bg-white shadow rounded">
-      <h2 class="fw-bold text-danger">💖 Special Offer for Newlyweds 💖</h2>
-      <p class="lead">Celebrate love with <strong>50% OFF</strong> on your first dining experience!</p>
-      <p class="text-muted">Exclusively for newly married couples. Limited time only.</p>
-      <a href="#reservation" class="btn btn-danger btn-lg mt-3">Grab the Offer</a>
-    </div>
-  </div>
-</section>-->
 
-  <footer class=" foot">
-    <div class="container container-fluid mt-10 w-100">
-      <div class="row">
-        <div class="col-md-3">
-          <img src="image/logo1.jpg" alt="logo" width="100px" height="100px">
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="logo">Cafe Delights</h4>
+                    <p>Serving delicious pizza, burgers, and more in a cozy atmosphere since 2010.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#" onclick="showPage('home-page')">Home</a></li>
+                        <li><a href="#" onclick="showPage('menu-page')">Menu</a></li>
+                        <li><a href="#" onclick="showPage('about-page')">About Us</a></li>
+                        <li><a href="#" onclick="showPage('gallery-page')">Gallery</a></li>
+                        <li><a href="#" onclick="showPage('contact-page')">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 footer-links">
+                    <h5>Opening Hours</h5>
+                    <ul>
+                        <li>Monday-Friday: 8am - 10pm</li>
+                        <li>Saturday-Sunday: 9am - 11pm</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 footer-links">
+                    <h5>Contact Info</h5>
+                    <ul>
+                        <li>123 Main Street, New York, NY</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Email: info@cafedelights.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2025 Cafe Delights. All rights reserved.</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3">
-          <h1>Quick Links</h1>
-          <a href="index.html">Home</a><br>
-          <a href="about.html">About Us</a><br>
-          <a href="services.html">Services</a><br>
-          <a href="menu.html">Menu</a><br>
-          <a href="gallary.html">Gallery</a><br>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="col-md-3">
-          <h1> Contact</h1>
-          <p>Phone no:<a href="tel:7849960950">6765890187</a></p>
-          <p><i class="bi bi-envelope "></i><a href="mailto:sujata@gmail.com">classiccrowngmail.com</a></p>
-        </div>
-        <div class="col-md-3">
-          <h1>Follow Us</h1>
-          <a href="https://www.facebook.com/login.ph"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
-          <a href="https://in.linkedin.com/"><i class="bi bi-linkedin"></i></a>
-          <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="bi bi-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="bottom-bar">
-      <p>@copy;2024 your company.All rights reserved</p>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <script src="index.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to show the selected page and hide others
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page-content').forEach(page => {
+                page.style.display = 'none';
+            });
+
+            // Show the selected page
+            document.getElementById(pageId).style.display = 'block';
+
+            // Update active nav link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Find the link that corresponds to this page and make it active
+            document.querySelectorAll('.nav-link').forEach(link => {
+                if (link.getAttribute('onclick') === `showPage('${pageId}')`) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
 </body>
 
 </html>
