@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe Delights - Delicious Food & Cozy Atmosphere</title>
+    <title>Restaurant - Delicious Food & Cozy Atmosphere</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -106,7 +106,8 @@
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <h2 class="section-title">Our Story</h2>
-                        <p>Founded in 2010, Cafe Delights started as a small family-owned cafe with a passion for
+                        <p>Founded in 2010, The Classic Crown started as a small family-owned Restaurant with a passion
+                            for
                             serving delicious food made from locally sourced ingredients. Over the years, we've grown
                             into a beloved neighborhood spot known for our cozy atmosphere and friendly service.</p>
                         <p>Our chefs bring creativity and expertise to every dish, ensuring that each meal is a
@@ -153,15 +154,17 @@
     </div>
 
     <!-- Menu Page -->
-    <div id="menu-page" class="page-content">
+    <div id="menu-page" class="page-content" style="display:none;">
         <section class="py-5">
             <div class="container">
-                <h2 class="text-center section-title">Our Menu</h2>
+                <h2 class="text-center section-title mb-4">Our Menu</h2>
+                <p class="text-center text-muted mb-5">Deliciously crafted with love – pick your favorite dish!</p>
 
+                <!-- Menu Tabs -->
                 <ul class="nav nav-pills justify-content-center mb-5" id="menuTabs" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="pizza-tab" data-bs-toggle="pill" data-bs-target="#pizza"
-                            type="button" role="tab">Pizza</button>
+                            type="button" role="tab">Pizzas</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="burgers-tab" data-bs-toggle="pill" data-bs-target="#burgers"
@@ -175,224 +178,271 @@
                         <button class="nav-link" id="desserts-tab" data-bs-toggle="pill" data-bs-target="#desserts"
                             type="button" role="tab">Desserts</button>
                     </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="sides-tab" data-bs-toggle="pill" data-bs-target="#sides"
+                            type="button" role="tab">Sides</button>
+                    </li>
                 </ul>
 
+                <!-- Menu Content -->
                 <div class="tab-content" id="menuTabsContent">
+
+                    <!-- Pizzas -->
                     <div class="tab-pane fade show active" id="pizza" role="tabpanel">
+                        <h4 class="mb-4 text-center">Handcrafted Pizzas</h4>
                         <div class="row">
                             <div class="col-md-6 mb-4">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="Margherita Pizza" class="img-fluid rounded" width="100">
+                                <div class="menu-item d-flex align-items-center p-3 rounded shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=100&q=80"
+                                        alt="Margherita Pizza" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>Margherita Pizza <span class="badge bg-success">Best Seller</span> <span
+                                                class="price">₹499</span></h5>
+                                        <p>Classic tomato sauce, mozzarella, and fresh basil leaves.</p>
                                     </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>Margherita Pizza <span class="price">$12.99</span></h5>
-                                        <p>Classic combination of tomato sauce, fresh mozzarella, and basil</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="menu-item d-flex align-items-center p-3 rounded shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=100&q=80"
+                                        alt="Pepperoni Pizza" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>Pepperoni Pizza <span class="price">₹549</span></h5>
+                                        <p>Loaded with mozzarella cheese and spicy pepperoni slices.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="menu-item d-flex align-items-center p-3 rounded shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=100&q=80"
+                                        alt="Vegetarian Delight" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>Vegetarian Delight <span class="price">₹529</span></h5>
+                                        <p>Mushrooms, onions, bell peppers, olives, and mozzarella.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="menu-item d-flex align-items-center p-3 rounded shadow-sm">
+                                    <img src="./image/chees pizza.jpg" alt="BBQ Chicken Pizza" class="img-fluid rounded"
+                                        width="100">
+                                    <div class="ms-3">
+                                        <h5>BBQ Chicken Pizza <span class="badge bg-warning text-dark">New</span> <span
+                                                class="price">₹599</span></h5>
+                                        <p>BBQ sauce, grilled chicken, red onions, and cilantro.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="Pepperoni Pizza" class="img-fluid rounded" width="100">
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>Pepperoni Pizza <span class="price">$14.99</span></h5>
-                                        <p>Tomato sauce, mozzarella, and generous portions of pepperoni</p>
+                                    <img src="./image/paneertika.webp" alt="Paneer Tikka Pizza"
+                                        class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>Paneer Tikka Pizza <span class="price">₹359</span></h5>
+                                        <p>Indian flavors with marinated paneer & spices</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="Vegetarian Pizza" class="img-fluid rounded" width="100">
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>Vegetarian Delight <span class="price">$13.99</span></h5>
-                                        <p>Tomato sauce, mozzarella, mushrooms, onions, bell peppers, and olives</p>
+                                    <img src="./image/maxican piza.jpg" alt="Mexican Pizza" class="img-fluid rounded"
+                                        width="100">
+                                    <div class="ms-3">
+                                        <h5>Mexican Fiesta Pizza <span class="price">₹389</span></h5>
+                                        <p>Spicy jalapeños, beans, onions & cheddar</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1593259037198-c720f442b5cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="BBQ Chicken Pizza" class="img-fluid rounded" width="100">
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>BBQ Chicken Pizza <span class="price">$15.99</span></h5>
-                                        <p>BBQ sauce, mozzarella, grilled chicken, red onions, and cilantro</p>
-                                    </div>
-                                </div>
-                            </div>
+
+
                         </div>
                     </div>
 
+                    <!-- Burgers -->
                     <div class="tab-pane fade" id="burgers" role="tabpanel">
+                        <h4 class="mb-4 text-center">Juicy Burgers</h4>
                         <div class="row">
                             <div class="col-md-6 mb-4">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="Classic Burger" class="img-fluid rounded" width="100">
+                                <div class="menu-item d-flex align-items-center p-3 rounded shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=100&q=80"
+                                        alt="Classic Burger" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>Classic Cheeseburger <span class="price">₹399</span></h5>
+                                        <p>Beef patty, cheddar, lettuce, tomato, onion, and house sauce.</p>
                                     </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>Classic Cheeseburger <span class="price">$10.99</span></h5>
-                                        <p>Beef patty, cheddar cheese, lettuce, tomato, onion, and special sauce</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="menu-item d-flex align-items-center p-3 rounded shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=100&q=80"
+                                        alt="Bacon Burger" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>Bacon Deluxe <span class="price">₹449</span></h5>
+                                        <p>Beef patty, crispy bacon, Swiss cheese, and BBQ sauce.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="Bacon Burger" class="img-fluid rounded" width="100">
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>Bacon Deluxe <span class="price">$12.99</span></h5>
-                                        <p>Beef patty, crispy bacon, Swiss cheese, lettuce, and barbecue sauce</p>
+                                    <img src="./image/barger1.jpg" alt="Paneer Burger" class="img-fluid rounded"
+                                        width="100">
+                                    <div class="ms-3">
+                                        <h5>Paneer Burger <span class="price">₹259</span></h5>
+                                        <p>Grilled paneer patty with spicy mayo & veggies</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="Veggie Burger" class="img-fluid rounded" width="100">
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>Veggie Burger <span class="price">$11.99</span></h5>
-                                        <p>Plant-based patty, avocado, sprouts, tomato, and garlic aioli</p>
+                                    <img src="./image/barger1.jpg" alt="Crispy Chicken Burger" class="img-fluid rounded"
+                                        width="100">
+                                    <div class="ms-3">
+                                        <h5>Crispy Chicken Burger <span class="price">₹279</span></h5>
+                                        <p>Crispy fried chicken with lettuce & secret sauce</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="Mushroom Swiss Burger" class="img-fluid rounded" width="100">
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>Mushroom Swiss Burger <span class="price">$13.99</span></h5>
-                                        <p>Beef patty, sautéed mushrooms, Swiss cheese, and truffle aioli</p>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
 
+                    <!-- Drinks -->
                     <div class="tab-pane fade" id="drinks" role="tabpanel">
+                        <h4 class="mb-4 text-center">Refreshing Drinks</h4>
                         <div class="row">
                             <div class="col-md-6 mb-4">
                                 <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="Coffee" class="img-fluid rounded" width="100">
+                                    <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=100&q=80"
+                                        alt="Rasmalai" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">eamy foam topping.</p>
                                     </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>Specialty Coffee <span class="price">$4.99</span></h5>
-                                        <p>Freshly brewed coffee from locally roasted beans</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="menu-item d-flex align-items-center p-3 rounded shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=100&q=80"
+                                        alt="Coffee" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>Specialty Co
+                                            <h5>Rasmalai <span class="price">₹149</span></h5>
+                                            <p>Soft paneer patties soaked in sweetened milk</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="menu-item d-flex align-items-center p-3 rounded shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=100&q=80"
+                                        alt="Cappuccino" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>Cappuccino <span class="price">₹179</span></h5>
+                                        <p>Espresso with steamed milk and a crffee <span class="price">₹149</span></h5>
+                                        <p>Freshly brewed coffee from locally roasted beans.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="Cappuccino" class="img-fluid rounded" width="100">
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>Cappuccino <span class="price">$5.99</span></h5>
-                                        <p>Espresso with steamed milk and a deep layer of foam</p>
+                                    <img src="https://images.unsplash.com/photo-1593560707922-32f3e1c5bd01?auto=format&fit=crop&w=100&q=80"
+                                        alt="Cold Coffee" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>Iced Cold Coffee <span class="price">₹169</span></h5>
+                                        <p>Refreshing cold brew with ice & cream</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="Fresh Juice" class="img-fluid rounded" width="100">
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>Fresh Juice <span class="price">$6.99</span></h5>
-                                        <p>Seasonal fruits cold-pressed to order</p>
+                                    <img src="https://images.unsplash.com/photo-1580983561371-7e89d7a9bfc1?auto=format&fit=crop&w=100&q=80"
+                                        alt="Mocktail" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>Fruit Punch Mocktail <span class="price">₹179</span></h5>
+                                        <p>Refreshing mix of tropical fruits</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="Smoothie" class="img-fluid rounded" width="100">
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>Superfood Smoothie <span class="price">$7.99</span></h5>
-                                        <p>Blend of fruits, spinach, and protein powder</p>
+                                    <img src="https://images.unsplash.com/photo-1510626176961-4b67dabe2024?auto=format&fit=crop&w=100&q=80"
+                                        alt="Milkshake" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>Chocolate Milkshake <span class="price">₹199</span></h5>
+                                        <p>Thick creamy shake with real chocolate</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Desserts -->
                     <div class="tab-pane fade" id="desserts" role="tabpanel">
+                        <h4 class="mb-4 text-center">Sweet Treats</h4>
                         <div class="row">
                             <div class="col-md-6 mb-4">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="Chocolate Cake" class="img-fluid rounded" width="100">
+                                <div class="menu-item d-flex align-items-center p-3 rounded shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?auto=format&fit=crop&w=100&q=80"
+                                        alt="Chocolate Cake" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>Chocolate Cake <span class="price">₹249</span></h5>
+                                        <p>Rich chocolate layers with buttercream frosting.</p>
                                     </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>Chocolate Cake <span class="price">$6.99</span></h5>
-                                        <p>Rich chocolate layers with buttercream frosting</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="menu-item d-flex align-items-center p-3 rounded shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6d?auto=format&fit=crop&w=100&q=80"
+                                        alt="Tiramisu" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>Tiramisu <span class="price">₹299</span></h5>
+                                        <p>Classic Italian dessert with espresso-soaked ladyfingers.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="Cheesecake" class="img-fluid rounded" width="100">
+                                    <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=100&q=80"
+                                        alt="Rasmalai" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>Rasmalai <span class="price">₹149</span></h5>
+                                        <p>Soft paneer patties soaked in sweetened milk</p>
                                     </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>New York Cheesecake <span class="price">$7.99</span></h5>
-                                        <p>Creamy cheesecake with a graham cracker crust</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Sides -->
+                    <div class="tab-pane fade" id="sides" role="tabpanel">
+                        <h4 class="mb-4 text-center">Perfect Sides</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="menu-item d-flex align-items-center p-3 rounded shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1586190848861-99aa4b70bba2?auto=format&fit=crop&w=100&q=80"
+                                        alt="French Fries" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>French Fries <span class="price">₹149</span></h5>
+                                        <p>Golden and crispy fries served with ketchup.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="Ice Cream" class="img-fluid rounded" width="100">
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>Artisan Ice Cream <span class="price">$5.99</span></h5>
-                                        <p>Handcrafted ice cream with seasonal flavors</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                                            alt="Tiramisu" class="img-fluid rounded" width="100">
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5>Tiramisu <span class="price">$8.99</span></h5>
-                                        <p>Classic Italian dessert with espresso-soaked ladyfingers</p>
+                                <div class="menu-item d-flex align-items-center p-3 rounded shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1600891965055-d723c1a227cd?auto=format&fit=crop&w=100&q=80"
+                                        alt="Garlic Bread" class="img-fluid rounded" width="100">
+                                    <div class="ms-3">
+                                        <h5>Garlic Bread <span class="price">₹129</span></h5>
+                                        <p>Toasted bread with garlic butter and herbs.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+
+                </div><!-- end tab-content -->
             </div>
         </section>
     </div>
+
 
     <!-- About Page -->
     <div id="about-page" class="page-content">
@@ -403,12 +453,18 @@
                 <div class="row mb-5">
                     <div class="col-md-6">
                         <h3>Our Story</h3>
-                        <p>Cafe Delights was founded in 2010 by husband and wife team, Marco and Sofia. What started as
+                        <p>The Classic Crown was founded in 2010 by husband and wife team, Marco and Sofia. What started
+                            as
+                            a small neighborhood Restaurant with just six tables has grown into a beloved local
+                            institution
                             a small neighborhood cafe with just six tables has grown into a beloved local institution
                             known for its delicious food and warm atmosphere.</p>
                         <p>Our philosophy is simple: use the freshest ingredients, prepare everything with care, and
                             serve our customers like family. We source locally whenever possible, supporting our
                             community's farmers and producers.</p>
+                        <p>Over the years, we’ve had the joy of celebrating countless birthdays, anniversaries, and
+                            family
+                            gatherings with our guests, turning meals into lasting memories.</p>
                     </div>
                     <div class="col-md-6">
                         <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
@@ -425,6 +481,8 @@
                         <p>Each member of our kitchen staff is trained in our exacting standards for quality and
                             consistency. We believe that great food comes from attention to detail and a genuine love
                             for cooking.</p>
+                        <p>Our chefs also enjoy experimenting with seasonal ingredients to craft special menus that
+                            surprise and delight our guests, keeping every visit unique.</p>
                     </div>
                     <div class="col-md-6 order-md-1">
                         <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
@@ -437,38 +495,97 @@
                         <h3>Community Involvement</h3>
                         <p>We believe in giving back to the community that has supported us over the years. We regularly
                             participate in local events and donate to neighborhood schools and organizations.</p>
+
                         <p>Each month, we feature a "Community Plate" special where a portion of the proceeds goes to a
                             local charity. We also host fundraising events and provide meals for those in need during
                             the holidays.</p>
+                        <p>Beyond food, we’re passionate about building connections. Whether it’s hosting live music,
+                            supporting local artists, or mentoring young chefs, we strive to be more than just a
+                            restaurant —
+                            we aim to be a cornerstone of our community.</p>
                     </div>
                     <div class="col-md-6">
-                        <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b3029?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-                            alt="Community Event" class="img-fluid about-img">
+                        <img src="./image/restu1 (4).jpg (4).jpg" alt="Community Event" class="img-fluid about-img">
                     </div>
                 </div>
+                <div class="row text-center mb-5">
+                    <h3 class="mb-4" data-aos="fade-up">Our Core Values</h3>
+                    <div class="col-md-4" data-aos="zoom-in">
+                        <div class="p-4 shadow-sm rounded bg-white h-100">
+                            <h5>Freshness</h5>
+                            <p>Only the finest, locally sourced ingredients find their way to your plate.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="p-4 shadow-sm rounded bg-white h-100">
+                            <h5>Community</h5>
+                            <p>We believe in giving back and growing together with our neighbors.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="p-4 shadow-sm rounded bg-white h-100">
+                            <h5>Passion</h5>
+                            <p>Every recipe is made with love, care, and attention to detail.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-12 text-center" data-aos="fade-up">
+                        <h3 class="mb-3">Loved By Our Guests</h3>
+                        <p class="text-muted w-75 mx-auto">
+                            "Café Delights feels like home. The food is amazing, but it’s the warmth and care that keep
+                            us coming back." <br>
+                            – A regular guest
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="text-center mt-5" data-aos="fade-up">
+                    <h4 class="mb-3">Be Part of Our Story</h4>
+                    <p class="text-muted mb-4">
+                        Whether it’s your first visit or your hundredth, we can’t wait to welcome you.
+                        Come for the coffee, stay for the community.
+                    </p>
+                    <a href="#menu" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm"
+                        onclick="showPage('menu-page')">Explore Our Menu</a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Cafe Community" class="img-fluid rounded">
             </div>
-        </section>
+    </div>
+
+
+
+    </div>
+    </section>
+    </div>
+    </div>
+    </section>
     </div>
 
     <!-- Gallery Page -->
     <div id="gallery-page" class="page-content">
         <section class="py-5">
             <div class="container">
-                <h2 class="text-center section-title">Gallery</h2>
+                <h2 class="text-center section-title">Gallery</h2>                        
+
 
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Pizza" class="img-fluid ">
+                            alt="Pizza" class="img-fluid gallery-img rounded" height="400px" width="500px">
+
                     </div>
                     <div class="col-md-4 mb-4">
                         <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Burger" class="img-fluid gallery-img rounded" height="300px" width="400px">
+                            alt="Burger" class="img-fluid gallery-img rounded" height="400px" width="500px">
                     </div>
                     <div class="col-md-4 mb-4">
                         <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                             alt="Coffee" class="img-fluid" width="400px" height="300px">
                     </div>
+                 
                     <div class="col-md-4 mb-4">
                         <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                             alt="Pizza Slice" class="img-fluid gallery-img rounded">
@@ -477,10 +594,12 @@
                         <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                             alt="Burger Closeup" class="img-fluid gallery-img rounded">
                     </div>
+                    
                     <div class="col-md-4 mb-4">
                         <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                             alt="Coffee Art" class="img-fluid gallery-img rounded">
                     </div>
+                      
 
                     <div class="col-md-4 mb-4">
                         <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
@@ -533,7 +652,8 @@
                         <div class="row g-4">
                             <!-- You can duplicate and replace image URLs as needed -->
                             <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                                <img src="image/food1.jpg" class="w-100 gallery-img" alt="Pizza" width="400px" height="300px">
+                                <img src="image/food1.jpg" class="w-100 gallery-img" alt="Pizza" width="400px"
+                                    height="300px">
                             </div>
 
                             <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
@@ -567,10 +687,10 @@
                         </div>
 
                     </div>
-                   
-                    </div>
+
                 </div>
             </div>
+    </div>
     </div>
 
     </div>
@@ -656,10 +776,13 @@
         </section>
 
         <div class="container-fluid px-0">
-            <div class="map" 
+            <div class="map"
                 style="height: 400px; background: #eee; display: flex; align-items: center; justify-content: center;">
                 <p class="text-center">Map would be embedded here<br>showing the location of The Classic Crown</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.780429694215!2d73.80120337496571!3d18.62894318248574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e61acc72af%3A0x97f1f82cfbe35a0a!2sPCMC%20Metro%20Station!5e0!3m2!1sen!2sin!4v1757750644475!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.780429694215!2d73.80120337496571!3d18.62894318248574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e61acc72af%3A0x97f1f82cfbe35a0a!2sPCMC%20Metro%20Station!5e0!3m2!1sen!2sin!4v1757750644475!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -672,9 +795,9 @@
                     <h4 class="logo">The Classic Crown</h4>
                     <p>Serving delicious pizza, burgers, and more in a cozy atmosphere since 2010.</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/login.ph"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/i/flow/login?lang=en"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-tripadvisor"></i></a>
                     </div>
                 </div>
@@ -698,9 +821,13 @@
                 <div class="col-md-3 mb-4 footer-links">
                     <h5>Contact Info</h5>
                     <ul>
-                        <li>PCMC metro Station Pimpri-Chinchwad,Pune</li>
-                         <li>Phone: (+91) 7422436789</li>
-                        <li>Email: info@theclassiccrown.com</li>
+                        <<<<<<< HEAD <li>PCMC metro Station Pimpri-Chinchwad,Pune</li>
+                            <li>Phone: (+91) 7422436789</li>
+                            =======
+                            <li>123 Main Street, New York, NY</li>
+                            <li>Phone: (91) 7422996556</li>
+                            >>>>>>> 427ade41908877d2b5ec9ec643746de8efccc30a
+                            <li>Email: info@theclassiccrown.com</li>
                     </ul>
                 </div>
             </div>
